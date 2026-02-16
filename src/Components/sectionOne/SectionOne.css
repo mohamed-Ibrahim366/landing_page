@@ -1,0 +1,135 @@
+/* Import fonts as per the design requirements */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Source+Sans+3:wght@400;600&display=swap');
+
+.section-one {
+  background-color: #0b4d7a; /* Exact deep blue from the image */
+  min-height: 100vh;
+  width: 100%;
+  padding: 80px 20px;
+  font-family: 'Source Sans 3', sans-serif;
+}
+
+/* Logo Box */
+.logo-box {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Headline - Matching the Serif style in the image */
+.main-headline {
+  font-family: 'Merriweather', serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
+
+/* Middle Description text */
+.description {
+  max-width: 620px;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+/* The Glassmorphism Info Box */
+.info-box {
+  max-width: 750px;
+  background-color: rgba(255, 255, 255, 0.22); /* Semi-transparent white */
+  backdrop-filter: blur(10px); /* Frosted glass effect */
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+.info-box p {
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+}
+
+/* Button Customization */
+.btn-login, .btn-register {
+  width: 180px;
+  padding: 10px 0;
+  border-radius: 12px !important; /* Matches the soft rounding in image */
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.btn-login {
+  background-color: transparent !important;
+  color: #ffffff !important;
+  border: 2px solid #ffffff !important;
+}
+
+.btn-register {
+  background-color: transparent !important;
+  color: #ffffff !important;
+  border: 2px solid #ffffff !important;
+}
+
+.btn-login:hover, .btn-register:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  filter: brightness(1.05);
+}
+
+
+/* ********************************************** */
+/* Action Buttons Container */
+.d-flex.gap-4 {
+  margin-top: 1rem;
+}
+
+/* Base button style to match image proportions */
+.btn-light, .btn-outline-light {
+  /* Vertical and Horizontal Padding */
+  padding: 12px 0px !important; 
+  
+  /* Width: set to a large fixed size like the image */
+  width: 220px; 
+  
+  /* Typography */
+  font-size: 1.25rem !important; 
+  font-weight: 600 !important;
+  letter-spacing: 0.5px;
+  
+  /* Border Radius */
+  border-radius: 12px !important; 
+  
+  /* Smooth interaction */
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+}
+
+/* Specific styling for the Solid White Login Button */
+.btn-light {
+  background-color: #ffffff !important;
+  color: #0b4d7a !important;
+  border: none !important;
+}
+
+/* Specific styling for the Outlined Register Button */
+.btn-outline-light {
+  background-color: transparent !important;
+  color: #ffffff !important;
+  border: 2px solid #ffffff !important;
+}
+
+/* Hover effects for that premium feel */
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  filter: brightness(1.05);
+}
+
+/* Mobile Responsiveness: ensure they stack or shrink on small screens */
+@media (max-width: 576px) {
+  .btn-light, .btn-outline-light {
+    width: 100%;
+    max-width: 280px;
+  }
+}

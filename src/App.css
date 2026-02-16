@@ -1,0 +1,93 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Source+Sans+3:wght@400;500;600&display=swap');
+
+:root {
+  /* Color Palette */
+  --bg-primary: #0b4d7a;
+  --bg-secondary: #105b8e;
+  --text-main: #f4f7fb;
+  --text-muted: #cbd5e1;
+  --accent: #38bdf8; /* A bright sky blue for links/buttons */
+
+  /* Typography */
+  --font-heading: 'Merriweather', serif;
+  --font-body: 'Source Sans 3', sans-serif;
+  
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  font-family: var(--font-body);
+  line-height: 1.6; /* Improved readability */
+  min-height: 100vh;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Typography Defaults */
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  color: #ffffff;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+
+p {
+  margin-bottom: 1.25rem;
+  font-size: 1.1rem; /* Slightly larger for dark backgrounds */
+  color: var(--text-muted);
+}
+
+/* Basic Layout Helper */
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Interactive Elements */
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+button {
+  font-family: var(--font-body);
+  font-weight: 600;
+  background-color: var(--accent);
+  color: var(--bg-primary);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 0.1s active;
+}
+
+button:hover {
+  filter: brightness(1.1);
+}
